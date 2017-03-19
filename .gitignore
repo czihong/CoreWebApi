@@ -2,5 +2,6 @@
 [Bb]in/
 .build/
 PublishProfiles/
+Properties/
 .vs/
 node_modules/
