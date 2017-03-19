@@ -1,7 +1,7 @@
-﻿USE [School];
+﻿USE [VideoStore];
 
---ALTER DATABASE [School] COLLATE Chinese_PRC_CI_AS;
---ALTER DATABASE [School] COLLATE SQL_Latin1_General_CP1_CI_AS;
+ALTER DATABASE [VideoStore] COLLATE Chinese_PRC_CI_AS;
+--ALTER DATABASE [VideoStore] COLLATE SQL_Latin1_General_CP1_CI_AS;
 
 /*
 	WebUser

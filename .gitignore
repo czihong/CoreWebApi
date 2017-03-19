@@ -5,3 +5,4 @@ PublishProfiles/
 Properties/
 .vs/
 node_modules/
+*.sln
