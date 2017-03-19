@@ -1,0 +1,6 @@
+[Oo]bj/
+[Bb]in/
+.build/
+PublishProfiles/
+.vs/
+node_modules/
