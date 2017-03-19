@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,8 +27,7 @@ namespace CoreWebApi
             // Add framework services.
             services.AddMvc();
 
-            var connection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=VideoStore;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            services.AddDbContext<VideoStoreContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<VideoStoreContext>(Configuration["Data:ConnectionString"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

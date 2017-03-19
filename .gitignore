@@ -4,5 +4,6 @@
 PublishProfiles/
 Properties/
 .vs/
+.vscode/
 node_modules/
 *.sln
